@@ -20,14 +20,6 @@ p {
 	font-size:20px;
 }
 
-.pizza1 {
-	position: fixed;
-	left:-60px;
-	top:-60px;
-}
-
-.pizza1:hover {
-}
 
 .option {
 	width:100px;
@@ -75,13 +67,13 @@ p {
 	/*background-image: url("background_pattern_toolbar.png");*/
 }
 
-#main {
+#main, #menu, #contact, #fun, #news {
 	width:765px;
 	height:auto;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:20px;
+	margin-top:-30px;
 	background-color:#aaa;
 	-webkit-transition: height 0.2s; 
     transition: height 0.2s;
@@ -93,7 +85,7 @@ p {
 	width:300px;
 	height:auto;
 	padding-bottom:10px;
-	position:fixed;
+	position:absolute;
 	top:325px;
 	background-color:#aaa;
 	border-bottom:  5px #777 solid;
@@ -193,5 +185,68 @@ p {
 
 .ad:hover {
 	margin-top:-390px;
-	
+}
+
+
+.block {
+	width: 740px;
+	height:200px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	border-bottom: 2px white dotted;
+}
+
+.menu_title {
+	color: #fff;
+	font-family: Dosis-Regular;
+	font-size:30px;
+	display:block;
+	margin-left:220px;
+	margin-top:-170px;
+}
+
+.menu_price {
+	color: #fff;
+	font-family: Dosis-Regular;
+	font-size:30px;
+	display:block;
+	margin-left:660px;
+	margin-top:10px;
+}
+
+.menu_content {
+	color: #fff;
+	font-family: Dosis-Light;
+	font-size:20px;
+	display:block;
+	margin-left:230px;
+	margin-top:-20px;
+}
+
+.menu_button {
+	display:block;
+	width:80px;
+	-webkit-transition: background-color 0.2s, border-bottom 0.2s, padding-top 0.2s; 
+    transition: background-color 0.2s, border-bottom 0.2s, padding-top 0.2s;
+	background-color:#ddd;
+	border-bottom:  5px #ccc solid;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	color: #333;
+	font-family: Dosis-Regular;
+	font-size:24px;
+}
+
+.menu_button:hover {
+	background-color:#eee;
+	border-bottom:  5px #ddd solid;
+	cursor:pointer;
+}
+.menu_button:active {
+	background-color:#eee;
+	border-bottom:  1px #ddd solid;
+	padding-top:3px;
 }

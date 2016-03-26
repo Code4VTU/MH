@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>The Pizza Webpage!</title>
+<title>La Pizza Migliore</title>
 <link href='webdesign.css' rel='stylesheet' type='text/css'>
 <script src="func.js"></script>
 </head>
-<body onload="onLoad()">
+<body onload="onLoad()" onscroll="onScroll()">
 <div class="toolbar">
-<div onclick = "LoadNewPage('menu')" class="option" style="width:120px;">Menu</div>
-<div onclick = "LoadNewPage('fun')" class="option" style="width:120px;">Fun</div>
-<div onclick = "LoadNewPage('index')" class="logo"><img src="logo.png" class="logo"></div>
-<div onclick = "LoadNewPage('news')" class="option" style="width:120px; ">News</div>
-<div onclick = "LoadNewPage('contact')" class="option" style="width:120px;">Contact Us</div>
+<div onclick = "document.getElementById( 'menu' ).scrollIntoView();" class="option" style="width:120px;">Menu</div>
+<div onclick = "document.getElementById( 'fun' ).scrollIntoView();" class="option" style="width:120px;">Fun</div>
+<div onclick = "document.getElementById( 'main' ).scrollIntoView();" class="logo"><img src="logo.png" class="logo"></div>
+<div onclick = "document.getElementById( 'news' ).scrollIntoView();" class="option" style="width:120px; ">News</div>
+<div onclick = "document.getElementById( 'contact' ).scrollIntoView();" class="option" style="width:120px;">Contact Us</div>
 </div>
 <!--<img src="top_view_pizza.png" class="pizza1">-->
 
@@ -24,8 +24,8 @@
 </div>
 
 <div id="main">
-<img src="logo.png" style="display:block; margin-left:auto; margin-right:auto;">
-<p style="display:block; margin-left: -5px; color:#fff; font-family: Dosis-Regular; font-size:24px;">Welcome</p>
+<div style="display:block; margin-left: auto; margin-right:auto; width:320px;"><p style="color:#fff; font-family: Dosis-Regular; font-size:50px;">La Pizza Migliore</p></div>
+<p style="display:block; margin-left: -5px; color:#fff; font-family: Dosis-Regular; font-size:24px; padding-top:10px;">Welcome</p>
 <p style="color:#fff">Hello and welcome to our Pizza site! We offer a large variety of pizzas, sandwiches, salads and more! Explore our simple webpage and choose the best meal for you, your friends and/or your family!</p>
 <p style="display:block; margin-left: -5px; color:#fff; font-family: Dosis-Regular; font-size:24px;">FAQs</p>
 <p style="color:#fff">Q: What is your work time?</p>
@@ -37,6 +37,67 @@
 <p style="color:#fff">Q: When will my order arrive?</p>
 <p style="color:#fff">A: You will be informed with a notification at the bottom left of your screen when your order is on its way!</p>
 </div>
+
+<div id="menu">
+<div style="display:block; margin-left: auto; margin-right:auto; width:100px;"><p style="color:#fff; font-family: Dosis-Regular; font-size:50px; padding:0px;">Menu</p></div>
+
+<div class="block">
+<img src="pizza_logo.png" style="width:150px; margin-left:25px; margin-top:25px;">
+<p class="menu_title">Peperoni Pizza</p>
+<p class="menu_content">Cheese, Peperoni sausage, Lettuce</p>
+
+<div class="menu_button" style="margin-left:660px; margin-top:-100px;" onclick="document.getElementById('price_pep').innerHTML = '$6.00'">Small</div>
+<div class="menu_button" style="margin-left:660px; margin-top:5px;" onclick="document.getElementById('price_pep').innerHTML = '$8.00'">Medium</div>
+<div class="menu_button" style="margin-left:660px; margin-top:5px;" onclick="document.getElementById('price_pep').innerHTML = '$10.00'">Large</div>
+
+<p class="menu_price" id="price_pep">$8.00</p>
+</div>
+
+<div class="block">
+<img src="pizza_logo.png" style="width:150px; margin-left:25px; margin-top:25px;">
+<p class="menu_title">Regular Pizza</p>
+<p class="menu_content">Cheese, Tomato Sauce</p>
+
+<div class="menu_button" style="margin-left:660px; margin-top:-100px;" onclick="document.getElementById('price_reg').innerHTML = '$5.00'">Small</div>
+<div class="menu_button" style="margin-left:660px; margin-top:5px;" onclick="document.getElementById('price_reg').innerHTML = '$7.00'">Medium</div>
+<div class="menu_button" style="margin-left:660px; margin-top:5px;" onclick="document.getElementById('price_reg').innerHTML = '$9.00'">Large</div>
+
+<p class="menu_price" id="price_reg">$7.00</p>
+</div>
+
+<div class="block">
+<img src="pizza_logo.png" style="width:150px; margin-left:25px; margin-top:25px;">
+<p class="menu_title">Vegetarian Pizza</p>
+<p class="menu_content">Lettuce, Cucumber, Cheese</p>
+
+<div class="menu_button" style="margin-left:660px; margin-top:-100px;" onclick="document.getElementById('price_pep').innerHTML = '$5.50'">Small</div>
+<div class="menu_button" style="margin-left:660px; margin-top:5px;" onclick="document.getElementById('price_pep').innerHTML = '$7.50'">Medium</div>
+<div class="menu_button" style="margin-left:660px; margin-top:5px;" onclick="document.getElementById('price_pep').innerHTML = '$9.50'">Large</div>
+
+<p class="menu_price" id="price_pep">$7.50</p>
+</div>
+
+
+</div>
+
+
+<div id="fun">
+<div style="display:block; margin-left: auto; margin-right:auto; width:80px;"><p style="color:#fff; font-family: Dosis-Regular; font-size:50px;">Fun</p></div>
+<p style="display:block; margin-left: -5px; color:#fff; font-family: Dosis-Regular; font-size:24px; padding-top:10px;">Comming soon!</p>
+</div>
+
+<div id="news">
+<div style="display:block; margin-left: auto; margin-right:auto; width:110px;"><p style="color:#fff; font-family: Dosis-Regular; font-size:50px;">News</p></div>
+<p style="display:block; margin-left: -5px; color:#fff; font-family: Dosis-Regular; font-size:24px; padding-top:10px;">Comming soon!</p>
+</div>
+
+<div id="contact">
+<div style="display:block; margin-left: auto; margin-right:auto; width:210px;"><p style="color:#fff; font-family: Dosis-Regular; font-size:50px;">Contact Us</p></div>
+<p style="display:block; margin-left: -5px; color:#fff; font-family: Dosis-Regular; font-size:24px; padding-top:10px;">Details</p>
+<p style="color:#fff">Phone Number: 08813371337</br>Address: Unknown St. 17</p>
+</div>
+
+
 
 <div id="order">
 <p style="display:block; color:#fff; margin-left:10px; margin-top:10px; font-size:24px; border-bottom: 1px white solid ">Order List</p>

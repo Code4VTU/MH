@@ -31,3 +31,11 @@ function LoadNewPage(pageName) {
 	
 	}
 }
+
+function onScroll() {
+	a = document.body.scrollTop;
+	if(a>1) {
+		document.getElementById("order").style.position = "fixed";
+	}
+	else document.getElementById("order").style.position = "absolute";
+}
