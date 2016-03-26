@@ -1,6 +1,7 @@
 body {
 	/*background-image: url("background_pattern.png");*/
 	background-color: #eee;
+	width:99%;
 }
 
 @font-face {
@@ -14,8 +15,8 @@ body {
 }
 
 p {
-	color: #eee;
-	font-family: Dosis-Regular;
+	color: #fff;
+	font-family: Dosis-Light;
 	font-size:20px;
 }
 
@@ -54,6 +55,11 @@ p {
 	display:inline-block;
 }
 
+.logo:hover {
+	content:url(logo_hover.png);
+	cursor:pointer;
+}
+
 .toolbar {
 	position:fixed;
 	left:-5px;
@@ -66,4 +72,27 @@ p {
 	height:75px;
 	text-align:center;
 	/*background-image: url("background_pattern_toolbar.png");*/
+}
+
+#main {
+	width:765px;
+	height:auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	background-color:#bbb;
+	-webkit-transition: height 0.2s; 
+    transition: height 0.2s;
+	padding:20px;
+	border-bottom:  5px #777 solid;
+}
+
+#order {
+	width:300px;
+	height:400px;
+	position:fixed;
+	top:100px;
+	background-color:#bbb;
+	border-bottom:  5px #777 solid;
 }
