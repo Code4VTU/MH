@@ -6,7 +6,7 @@ var total = 0;
 function onLoad() {
 	var body_size = document.body;
 	var width = 0;
-	width = body_size.clientWidth/2 - 750;
+	width = body_size.clientWidth/2 - 700;
 	document.getElementById("order").style.right  = width + "px";
 }
 

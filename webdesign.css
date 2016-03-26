@@ -39,14 +39,14 @@ p {
     transition: background-color 0.2s, font-size 0.2s;
 	color: #eee;
 	font-family: Dosis-Regular;
-	font-size:20px;
+	font-size:24px;
 	text-align:center;
 	padding-top:20px;
 	display:inline-block;
 }
 
 .option:hover {
-	font-size:24px;
+	font-size:26px;
 	cursor:pointer;
 	background-color:rgba(0, 0, 0, 0.2);
 }
@@ -71,6 +71,7 @@ p {
 	width:100%;
 	height:75px;
 	text-align:center;
+	z-index:51;
 	/*background-image: url("background_pattern_toolbar.png");*/
 }
 
@@ -80,19 +81,117 @@ p {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:100px;
-	background-color:#bbb;
+	margin-top:20px;
+	background-color:#aaa;
 	-webkit-transition: height 0.2s; 
     transition: height 0.2s;
-	padding:20px;
+	padding:0px 20px 0px 20px;
 	border-bottom:  5px #777 solid;
 }
 
 #order {
 	width:300px;
-	height:400px;
+	height:auto;
+	padding-bottom:10px;
 	position:fixed;
-	top:100px;
-	background-color:#bbb;
+	top:325px;
+	background-color:#aaa;
 	border-bottom:  5px #777 solid;
+	z-index:52;
+}
+
+#orderbutton {
+	margin-top:0px;
+	display:block;
+	width:260px;
+	margin-left:20px;
+	-webkit-transition: background-color 0.2s, border-bottom 0.2s, padding-top 0.2s; 
+    transition: background-color 0.2s, border-bottom 0.2s, padding-top 0.2s;
+	background-color:#58db64;
+	border-bottom:  5px #4ab854 solid;
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	color: #fff;
+	font-family: Dosis-Regular;
+	font-size:24px;
+}
+
+#orderbutton:hover {
+	background-color:#7efd82;
+	border-bottom:  5px #58db64 solid;
+	cursor:pointer;
+}
+
+#orderbutton:active {
+	background-color:#7efd82;
+	border-bottom:  1px #58db64 solid;
+	padding-top:11px;
+}
+
+#adspace {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:200px;
+	margin-top:100px;
+	background-color:#aaa;
+	border-bottom:  5px #777 solid;
+	overflow:hidden;
+	position:relative;
+}
+
+#adspace:hover {
+	cursor:pointer;
+}
+
+.overlap {
+	z-index:49;
+	position:absolute;
+	top:150px;
+	left:0px;
+}
+
+#overlaptext {
+	z-index:50;
+	position:absolute;
+	top:125px;
+	left:10px;
+	font-size:30px;
+}
+
+#arrow {
+	display:block;
+	padding:15px;
+	padding-top:50px;
+	height:200px;
+	border-bottom:  5px #777 solid;
+	overflow:hidden;
+	position:absolute;
+	color: #fff;
+	font-family: Dosis-Regular;
+	font-size:60px;
+	left:950px;
+	top:0px;
+	background-color:rgba(0, 0, 0, 0.4);
+}
+
+#arrow:hover {
+	background-color:rgba(0, 0, 0, 0.8);
+	cursor:pointer;
+}
+
+.ad {
+	display:block;
+	margin-left:-400px;
+	margin-top:-400px;
+	position:relative;
+	-webkit-transition: margin-top 0.5s; 
+    transition: margin-top 0.5s;
+}
+
+.ad:hover {
+	margin-top:-390px;
+	
 }
